@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
 # 下面三个是分别是名称、版本、简介。这个在pod search的时候会显示出来
 
   s.name         = 'CFZLPhotoBrowser'
-  s.version      = '0.0.4'
-  s.summary      = '原作者地址：https://github.com/longitachi/ZLPhotoBrowser。本库为项目所需个人定制版本。Forked from v2.7.4'
+  s.version      = '0.0.2'
+  s.summary      = '原作者地址：https://github.com/longitachi/ZLPhotoBrowser.git。本库为项目所需个人定制版本。Forked from v2.7.4'
 
-  s.homepage     = 'https://github.com/TabCen/ZLPhotoBrowser'
+  s.homepage     = 'https://github.com/TabCen/ZLPhotoBrowser.git'
   s.license      = 'MIT'
   s.platform     = :ios
   s.author       = {'longitachi' => 'chenfeigogo@gmail.com'}
