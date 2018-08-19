@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'CFZLPhotoBrowser'
   s.version      = '0.0.2'
-  s.summary      = '原作者地址：https://github.com/LiuXiangJing/XJContactPicker.git。本库为项目所需个人定制版本。Forked from v2.7.4'
+  s.summary      = '原作者地址：https://github.com/longitachi/ZLPhotoBrowser。本库为项目所需个人定制版本。Forked from v2.7.4'
 
   s.homepage     = 'https://github.com/TabCen/ZLPhotoBrowser'
   s.license      = 'MIT'
