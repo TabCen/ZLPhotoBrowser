@@ -26,6 +26,7 @@
 #define ZLPhotoBrowserHandleText @"ZLPhotoBrowserHandleText"
 #define ZLPhotoBrowserSaveImageErrorText @"ZLPhotoBrowserSaveImageErrorText"
 #define ZLPhotoBrowserMaxSelectCountText @"ZLPhotoBrowserMaxSelectCountText"
+#define ZLPhotoBrowserMinSelectCountText @"ZLPhotoBrowserMinSelectCountText"
 #define ZLPhotoBrowserNoCameraAuthorityText @"ZLPhotoBrowserNoCameraAuthorityText"
 #define ZLPhotoBrowserNoAblumAuthorityText @"ZLPhotoBrowserNoAblumAuthorityText"
 #define ZLPhotoBrowserNoMicrophoneAuthorityText @"ZLPhotoBrowserNoMicrophoneAuthorityText"

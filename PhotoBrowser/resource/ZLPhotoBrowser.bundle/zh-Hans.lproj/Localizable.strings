@@ -28,6 +28,7 @@
 
 "ZLPhotoBrowserSaveImageErrorText" = "图片保存失败";
 "ZLPhotoBrowserMaxSelectCountText" = "最多只能选择%ld张图片";
+"ZLPhotoBrowserMinSelectCountText" = "最少需要选择%ld张图片";
 "ZLPhotoBrowserMaxVideoDurationText" = "不能选择超过%ld秒的视频";
 
 "ZLPhotoBrowserNoCameraAuthorityText" = "请在iPhone的\"设置-隐私-相机\"选项中，允许%@访问你的相机";

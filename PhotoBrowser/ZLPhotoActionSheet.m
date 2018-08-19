@@ -559,6 +559,11 @@ double const ScalePhotoWidth = 1000;
 #pragma mark - 请求所选择图片、回调
 - (void)requestSelPhotos:(UIViewController *)vc data:(NSArray<ZLPhotoModel *> *)data hideAfterCallBack:(BOOL)hide
 {
+    if (self.arrSelectedModels.count < self.configuration.minSelectCount) {
+        ShowToastLong(GetLocalLanguageTextValue(ZLPhotoBrowserMinSelectCountText), self.configuration.minSelectCount);
+        return;
+    }
+    
     ZLProgressHUD *hud = [[ZLProgressHUD alloc] init];
     [hud show];
     
