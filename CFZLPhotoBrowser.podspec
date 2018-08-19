@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 # 下面三个是分别是名称、版本、简介。这个在pod search的时候会显示出来
 
-  s.name         = 'ZLPhotoBrowser'
+  s.name         = 'CFZLPhotoBrowser'
   s.version      = '0.0.2'
   s.summary      = '原作者地址：https://github.com/LiuXiangJing/XJContactPicker.git。本库为项目所需个人定制版本。Forked from v2.7.4'
 
