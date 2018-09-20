@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZLDefine.h"
 
 @class ZLPhotoModel;
 
@@ -14,5 +15,6 @@
 
 @property (nonatomic, strong) UIImage *oriImage;
 @property (nonatomic, strong) ZLPhotoModel *model;
+@property (nonatomic, assign) ZLImageEditType editType;
 
 @end

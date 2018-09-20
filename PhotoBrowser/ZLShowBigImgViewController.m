@@ -361,6 +361,7 @@
                (model.type == ZLAssetMediaTypeLivePhoto && !configuration.allowSelectLivePhoto)) {
         ZLEditViewController *vc = [[ZLEditViewController alloc] init];
         vc.model = model;
+        vc.editType = configuration.editType;
         ZLBigImageCell *cell = (ZLBigImageCell *)[_collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:_currentPage-1 inSection:0]];
         vc.oriImage = cell.previewView.image;
         [self.navigationController pushViewController:vc animated:NO];

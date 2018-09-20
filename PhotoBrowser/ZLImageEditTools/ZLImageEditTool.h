@@ -7,16 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZLDefine.h"
 
 @class ZLPhotoConfiguration;
-
-typedef NS_ENUM(NSUInteger, ZLImageEditType) {
-    ZLImageEditTypeClip     = 1 << 1,
-    ZLImageEditTypeRotate   = 1 << 2,
-    ZLImageEditTypeFilter   = 1 << 3,
-    ZLImageEditTypeDraw     = 1 << 4,
-    ZLImageEditTypeMosaic   = 1 << 5,
-};
 
 @interface ZLImageEditTool : UIView
 

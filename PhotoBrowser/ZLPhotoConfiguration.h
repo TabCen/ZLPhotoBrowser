@@ -140,6 +140,9 @@
  */
 @property (nonatomic, assign) BOOL editAfterSelectThumbnailImage;
 
+/**编辑时底部导航栏样式*/
+@property (assign, nonatomic) ZLImageEditType editType;
+
 /**
  编辑图片后是否保存编辑后的图片至相册，默认YES
  */

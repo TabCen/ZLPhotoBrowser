@@ -8,7 +8,6 @@
 
 #import "ZLEditViewController.h"
 #import "ZLPhotoModel.h"
-#import "ZLDefine.h"
 #import "ZLPhotoManager.h"
 #import "ToastUtils.h"
 #import "ZLProgressHUD.h"
@@ -34,8 +33,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if (!self.editType) {
+        self.editType = ZLImageEditTypeClip | ZLImageEditTypeRotate | ZLImageEditTypeFilter;
+    }
     [self setupUI];
+    
+
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -96,7 +100,7 @@
 - (void)loadEditTool
 {
     ZLPhotoConfiguration *configuration = [(ZLImageNavigationController *)self.navigationController configuration];
-    ZLImageEditType editType = ZLImageEditTypeClip | ZLImageEditTypeRotate | ZLImageEditTypeFilter;
+    ZLImageEditType editType = self.editType;
     _editTool = [[ZLImageEditTool alloc] initWithEditType:editType image:_oriImage configuration:configuration];
     zl_weakify(self);
     _editTool.cancelEditBlock = ^{

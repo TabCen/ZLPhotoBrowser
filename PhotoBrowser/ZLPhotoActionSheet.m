@@ -871,6 +871,8 @@ double const ScalePhotoWidth = 1000;
     ZLImageNavigationController *nav = [self getImageNavWithRootVC:vc];
     [nav.arrSelectedModels addObject:model];
     vc.model = model;
+    vc.editType = self.configuration.editType;
+    
     [self.sender showDetailViewController:nav sender:nil];
 }
 

@@ -147,6 +147,14 @@ typedef NS_ENUM(NSUInteger, ZLPreviewPhotoType) {
     ZLPreviewPhotoTypeURLVideo,
 };
 
+///图片编辑类别
+typedef NS_ENUM(NSUInteger, ZLImageEditType) {
+    ZLImageEditTypeClip     = 1 << 1,
+    ZLImageEditTypeRotate   = 1 << 2,
+    ZLImageEditTypeFilter   = 1 << 3,
+    ZLImageEditTypeDraw     = 1 << 4,
+    ZLImageEditTypeMosaic   = 1 << 5,
+};
 
 static inline NSDictionary * GetDictForPreviewPhoto(id obj, ZLPreviewPhotoType type) {
     if (nil == obj) {

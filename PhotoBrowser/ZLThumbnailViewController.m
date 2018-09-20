@@ -406,6 +406,7 @@ typedef NS_ENUM(NSUInteger, SlideSelectType) {
 - (void)btnEdit_Click:(id)sender {
     ZLImageNavigationController *nav = (ZLImageNavigationController *)self.navigationController;
     ZLPhotoModel *m = nav.arrSelectedModels.firstObject;
+    ZLPhotoConfiguration *configuration = nav.configuration;
     
     if (m.type == ZLAssetMediaTypeVideo) {
         ZLEditVideoController *vc = [[ZLEditVideoController alloc] init];
@@ -416,6 +417,9 @@ typedef NS_ENUM(NSUInteger, SlideSelectType) {
                m.type == ZLAssetMediaTypeLivePhoto) {
         ZLEditViewController *vc = [[ZLEditViewController alloc] init];
         vc.model = m;
+        
+        vc.editType = nav.configuration.editType;
+        
         [self.navigationController pushViewController:vc animated:NO];
     }
 }
